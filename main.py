@@ -53,6 +53,7 @@ def main():
 			case "5":
 				print("Merci et à bientot !")
 				input()
+				clear()
 				sys.exit()
 			case _:
 				choix = ""

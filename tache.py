@@ -33,16 +33,16 @@ class Tache:
 			return self.DB.remove(self.CHECK_DB.titre==self.titre)
 
 
-	def check_db_file_exists(self): #NE FONCTIONNE PAS, A REVOIR
-		db_file = self.BASE_DIR / "datas" / "taches.json"
-		try:
-			self.BASE_DIR.mkdir()
-		except FileExistsError:
-			print("Le dossier 'datas/' existe déjà, action mkdir() ignorée.")
-		try:
-			db_file.touch()
-		except FileExistsError:
-			print("Le fichier 'taches.json' existe déjà, action touch() ignorée.")
+	# def check_db_file_exists(self): #NE FONCTIONNE PAS, A REVOIR
+	# 	db_file = self.BASE_DIR / "datas" / "taches.json"
+	# 	try:
+	# 		self.BASE_DIR.mkdir()
+	# 	except FileExistsError:
+	# 		print("Le dossier 'datas/' existe déjà, action mkdir() ignorée.")
+	# 	try:
+	# 		db_file.touch()
+	# 	except FileExistsError:
+	# 		print("Le fichier 'taches.json' existe déjà, action touch() ignorée.")
 
 	def cocher_tache(self):
 		self.etat = True
