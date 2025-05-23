@@ -31,8 +31,6 @@ def main():
 						t.cocher_tache()
 						print(f"La tache {t.titre.title()} a ete cochee")
 						t.sauvegarder_tache()
-					else:
-						print(f"{t}")
 				choix = ""
 				input()
 			case "3":
